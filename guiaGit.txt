@@ -4,9 +4,10 @@ push: comando para enviar archivo de repositorio local al repositorio remoto
 origin: nombre del repositorio
 master: rama (branch)
 
----Borrado---
+---Recuperar archivos eliminados---
 
-git checkout archivo eliminado.txt
+Nota: solo funciona si estan en el estado staging area
+recupera archivo eliminado: git checkout archivo eliminado.txt
 
 ---Estados de GIT---
 
