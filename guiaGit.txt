@@ -1,17 +1,41 @@
+---significados---
+
+push: comando para enviar archivo de repositorio local al repositorio remoto
+origin: nombre del repositorio
+master: rama (branch)
+
+---Estados de GIT---
+
+working directory: estado donde se edita y trabajan los proyectos aun sin usar git de manera local.
+staging area: se elige los archivos que estasn listos y cumplen nuestros espetativas para pasar al ultimo estado.
+repositorio: ultimo estado que se usa para el control de versiones git, donde el proyecto
+sera guardado a traves de "commits"
+
 ---configuracion---
 
+se agregar el nombre de usuario git: git config --global user.name "nombre"
+email de usuario: git config --global user.email ejemplosemail.com
+se aplcia color a los datos del usuario: git config --global color.ui true
 muestra las configuraciones general de git: git config --list
 imprime el nombre de usuario confgurado en git: git config user.name
 
 
 ---crear repositorio---
 
-inicializar un proyecto vacio de git: git init
-
+inicializar un proyecto de git: git init
 ver estados de los archivos (modificados y no modificados): git status
-
 agregar todos los archivos al repostiorio: git add --all
-
-
 realizar commit: git commit -m "comentario"
 ver todos los commit realizados: git log
+
+---gitHub---
+
+agregar repositorio en github: git remote add origin https://github.com/juanzu/CursoGit.git
+realizar commit a github: git push origina master
+halar cambios que se hicieron de otra persona:  git pull origin master
+
+
+---ignorar archivos en git---
+
+se crea una archivo con el nombre: .gitignore
+luego se agregan los archivos o carpetas que se deben ocultar y no lea git en dicho archivo anterior
