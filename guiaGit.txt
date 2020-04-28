@@ -1,0 +1,17 @@
+---configuracion---
+
+muestra las configuraciones general de git: git config --list
+imprime el nombre de usuario confgurado en git: git config user.name
+
+
+---crear repositorio---
+
+inicializar un proyecto vacio de git: git init
+
+ver estados de los archivos (modificados y no modificados): git status
+
+agregar todos los archivos al repostiorio: git add --all
+
+
+realizar commit: git commit -m "comentario"
+ver todos los commit realizados: git log
