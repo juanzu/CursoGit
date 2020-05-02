@@ -1,17 +1,83 @@
+---significados---
+
+Nota: solo funcionan cuando tienes repositorio remoto configurado
+push: comando para enviar archivo de repositorio local al repositorio remoto
+pull: obtener los cambios que han subido al repositorio remoto al repositorio local
+origin: nombre del repositorio
+master: rama (branch)
+features: funciones que estan a parte de las ramas
+release: lanzamiento del proyecto
+hotfix: revisión
+
+---Estados de GIT---
+
+working directory: estado donde se edita y trabajan los proyectos aun sin usar git de manera local.
+staging area: se elige los archivos que estasn listos y cumplen nuestros espetativas para pasar al ultimo estado.
+repositorio: ultimo estado que se usa para el control de versiones git, donde el proyecto
+sera guardado a traves de "commits"
+
 ---configuracion---
 
+ver configuracion global: git config --global -l
+ver configuracion local: git config --local -l
+se agregar el nombre de usuario git: git config --global user.name "nombre"
+email de usuario: git config --global user.email ejemplosemail.com
+se aplcia color a los datos del usuario: git config --global color.ui true
 muestra las configuraciones general de git: git config --list
 imprime el nombre de usuario confgurado en git: git config user.name
 
+---Recuperar archivos eliminados---
+
+Nota: solo funciona si estan en el estado staging area
+recupera archivo eliminado: git checkout archivo eliminado.txt
 
 ---crear repositorio---
 
-inicializar un proyecto vacio de git: git init
-
+inicializar un proyecto de git: git init
 ver estados de los archivos (modificados y no modificados): git status
-
-agregar todos los archivos al repostiorio: git add --all
-
-
+agregar archivo especifico al repositorio local: git add nombrearchivo.extension
+agregar todos los archivos al repostiorio local: git add --all
 realizar commit: git commit -m "comentario"
 ver todos los commit realizados: git log
+fusionar otra rama a tu rama activa: git merge <branch>
+
+---repositorios remotos---
+
+mirar que repositorio remoto estamos trabajando: git config --get remote.origin.url
+ver la url remota del repositorio en el que nos encontremos: git remote -v
+
+---gitHub---
+
+agregar repositorio en github: git remote add origin https://github.com/juanzu/CursoGit.git
+realizar commit a github: git push origin nombrerama
+halar cambios que se hicieron de otra persona:  git pull origin master
+clonar repositorio: git clone urldelproyecto
+clonar repostiorio en una carpeta especifica: ingresar a la carpeta donde quiere clonar, git clone urlproyecto
+
+
+---ignorar archivos en git---
+
+se crea una archivo con el nombre: .gitignore
+luego se agregan los archivos o carpetas que se deben ocultar y no lea git en dicho archivo anterior
+
+
+---ramas(branch)---
+
+crear una rama: git branch nombrerama
+ramas que tenemos actualmente: git branch
+cabmbiar sitio de rama que estamos trabajando: git checkout nombrederama
+Borrar una rama: git branch -d nombrerama
+ver las ramas que han sido fusionadas con la rama activa: git branch --merged
+ramas que contienen trabajos sin fusionar: git branch --no-merged
+
+
+---tags---
+
+
+
+---herramientas---
+
+aplicacion para realizar funciones de git con interfaz grafica :https://www.gitkraken.com/
+Repositorios privados gratis: https://bitbucket.org/
+
+
