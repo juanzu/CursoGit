@@ -5,6 +5,9 @@ push: comando para enviar archivo de repositorio local al repositorio remoto
 pull: obtener los cambios que han subido al repositorio remoto al repositorio local
 origin: nombre del repositorio
 master: rama (branch)
+features: funciones que estan a parte de las ramas
+release: lanzamiento del proyecto
+hotfix: revisión
 
 ---Estados de GIT---
 
@@ -36,6 +39,7 @@ agregar archivo especifico al repositorio local: git add nombrearchivo.extension
 agregar todos los archivos al repostiorio local: git add --all
 realizar commit: git commit -m "comentario"
 ver todos los commit realizados: git log
+fusionar otra rama a tu rama activa: git merge <branch>
 
 ---repositorios remotos---
 
@@ -67,8 +71,11 @@ ver las ramas que han sido fusionadas con la rama activa: git branch --merged
 ramas que contienen trabajos sin fusionar: git branch --no-merged
 
 
+---tags---
 
----herramientas--
+
+
+---herramientas---
 
 aplicacion para realizar funciones de git con interfaz grafica :https://www.gitkraken.com/
 Repositorios privados gratis: https://bitbucket.org/
