@@ -8,6 +8,7 @@ master: rama (branch)
 features: funciones que estan a parte de las ramas
 release: lanzamiento del proyecto
 hotfix: revisión
+Markdown: lenguaje de marcado
 
 ---Estados de GIT---
 
